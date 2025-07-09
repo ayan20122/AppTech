@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="MainPg.CSS" />
+    <link rel="stylesheet" href="PRODUCTS.CSS" />
+    <link rel="stylesheet" href="NavbarAnimation.css" />
+    <style>
+      /* Optional: if you want smooth scroll behavior across the page */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Home Pg -->
+    <div class="Main">
+      <div class="NavBar">
+        <div class="container">
+          <h1 class="logo">APP TECH</h1>
+          <nav>
+            <a class="nav-link Products">PRODUCTS</a>
+            <a class="nav-link AboutUs">ABOUT US</a>
+            <a class="nav-link Team">TEAM</a>
+            <a class="nav-link Docs">DOCS</a>
+          </nav>
+          <form action="Nest.html">
+            <button class="btnContact">CONTACT US</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="MainContent">
+        <div class="ContentBox">
+          <div class="container">
+            <h1>Creating</h1>
+            <h1 class="MidCont">AI SaaS Applications</h1>
+          </div>
+
+          <h5>
+            We create smart, AI-driven SaaS applications designed for the
+            future. Simple, effective, and innovative
+          </h5>
+
+          <div class="ContentBtn">
+            <button class="ContinueBtn">Continue</button>
+            <button class="LearnMoreBtn">LearnMore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ProductsSection -->
+
+    <div class="PRODUCTS" id="products-section">
+      <div class="Heading">
+        <h1>PRODUCTS</h1>
+        <h5>
+          Explore our range of AI-driven SaaS applications designed to enhance
+          productivity and innovation.
+        </h5>
+      </div>
+      <div class="ProductsCard">
+        <div class="Card1" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+
+        <div class="Card2" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+        <div class="Card3" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+        <div class="Card4" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+        <div class="Card5" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+        <div class="Card6" id="Cards">
+          <div class="logoName">
+            <img src="Assets/ChatBot.png" alt="chatbot" />
+            <h2>ChatBot Pro</h2>
+          </div>
+          <div class="ContentLinks"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smooth scrollAnimation -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const productsLink = document.querySelector(".nav-link.Products");
+        const productsSection = document.getElementById("products-section");
+
+        productsLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
