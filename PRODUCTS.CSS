@@ -1,0 +1,120 @@
+.PRODUCTS {
+  width: auto;
+  height: auto;
+  /* background-color: rgb(14, 14, 14); */
+  background-color: rgb(14, 14, 14);
+  color: rgb(255, 255, 255);
+  padding-top: 30px;
+}
+.Heading {
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Heading h1 {
+  font-size: 4.3vw;
+}
+.Heading h5 {
+  font-weight: 700;
+  font-size: 1vw;
+}
+.ProductsCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  background-color: rgb(14, 14, 14);
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+
+#Cards {
+  margin-bottom: 30px;
+  width: 529px;
+  height: 363px;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgb(0, 0, 0); */
+  background-color: rgb(12, 12, 12);
+  padding: 20px 20px;
+  flex-direction: column;
+}
+#Cards .logoName {
+  height: 42px;
+  width: 331px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.ContSliderFlexBox {
+  width: 100%;
+  height: 355px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.Slider {
+  position: relative;
+  width: 174px;
+  height: 295px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#Cards .ContentLinks {
+  color: #fff;
+  height: 293px;
+  width: 291px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.ContentLinks .Links {
+  width: 300px;
+  height: 80px;
+  background-color: aqua;
+}
+
+#Cards {
+  transition: all 0.4s ease-in-out;
+}
+
+#Cards:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(8, 8, 8, 0.541) 0%,
+    rgba(19, 19, 19, 0.527) 100%
+  );
+  box-shadow: 0 4px 12px rgb(34, 34, 34);
+}
+@media (max-width: 1300px) {
+  .ProductsCard {
+    height: auto;
+  }
+}
+
+.Card1,
+.Card2 {
+  opacity: 0;
+  transform: translateY(40px); /* slightly more distance for smoother effect */
+  transition: opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* Final visible state */
+.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
